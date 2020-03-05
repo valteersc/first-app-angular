@@ -5,9 +5,16 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './curso.component.html',
   styleUrls: ['./curso.component.css']
 })
-export class CursoComponent implements OnInit {
+export class CursosComponent implements OnInit {
 
+  nome="";
+  idade=0;
+  curso:string[] = ["C+","Java","SQL"];
   constructor() { }
+
+  alteraNome(vl) {
+    this.nome = vl;
+  }
 
   ngOnInit(): void {
   }
